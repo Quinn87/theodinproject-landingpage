@@ -1,18 +1,21 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
-header {
+header, footer {
     background-color: #1f2937;
     color: #f9faf8;
+    padding: 30px 0;
 }
 
 .nav-bar {
     display: flex;
     justify-content: space-between;
     font-size: 24px;
+    margin: 0 200px;
+    margin-bottom: 100px;
 }
 
 ul {
@@ -21,11 +24,10 @@ ul {
     margin: 0;
 }
 
-
 a {
     text-decoration: none;
     color: #e5e7eb;
-    margin: 10px;
+    margin-left: 20px;
     font-size: 18px;
 }
 
@@ -34,12 +36,14 @@ a {
     font-weight: bold;
     display: flex;
     justify-content: space-between;
+    margin: 0 200px;
+    margin-bottom: 100px;
 }
 
 .main-title.left {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    
 }
 
 .main-caption {
@@ -64,7 +68,8 @@ a {
 
 img.header {
     width: 400px;
-    margin: 0 0 0 100px;
+    height: 300px;
+    margin-right: 100px;
 }
 
 .information > h3 {
@@ -77,6 +82,7 @@ img.header {
 .images {
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .image > img {
@@ -91,7 +97,64 @@ img.header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 0 24px;
     color: #4b5563;
+    margin: 20px;
 }
 
+.quote-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1f2937;
+    padding: 100px 0;
+}
+
+.quote {
+    margin: 0 500px;
+}
+
+.author {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    align-self: flex-end;
+    margin: 0;
+    margin-right: 500px;
+}
+
+.action-container {
+    padding: 40px;
+    margin: 100px 200px;
+}
+.action {
+    background-color: #3882F6;
+    color: #f9faf8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+    /* margin: 0 60px; */
+    border-radius: 8px;
+}
+
+.action-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.action-text > p, .action-text > h3 {
+    margin: 0;
+}
+
+
+.action > .sign-up {
+    border: 1px solid white;
+}
+
+footer {
+    text-align: center;
+}
